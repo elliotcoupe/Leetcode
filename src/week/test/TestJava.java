@@ -2,7 +2,7 @@ package week.test;
 
 public class TestJava {
     public static void main(String[] args){
-        testLoop();
+        testBitwiseAnd(1,2);
     }
 
     public static void testLoop(){
@@ -11,5 +11,9 @@ public class TestJava {
          */
         for(int i= 0; i< 5;++i)
             System.out.println(i);
+    }
+
+    public static void testBitwiseAnd(int a, int b){
+        System.out.println("Bitwise and of " + a + " & " + b + " is: " + (a & b));
     }
 }
