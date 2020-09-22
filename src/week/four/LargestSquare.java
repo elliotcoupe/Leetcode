@@ -7,7 +7,7 @@ public class LargestSquare {
         System.out.println("The result for testcase is " + maximalSquare(testcase));
 
     }
-
+    // This solutions looks clear but it's an brute force solution O(MN)
     public static int maximalSquare(int[][] matrix) {
         int max = 0;
         for(int i = 0; i < matrix.length; i++){
@@ -25,6 +25,7 @@ public class LargestSquare {
         return max*max;
     }
 
+    // this function is a helper to check the square layer by layer
     public static boolean checkValid(int[][] matrix, int x, int y, int count){
         for(int i = 0; i<= count; i++){
             if(matrix[x+count][y+i] != 1) return false;
