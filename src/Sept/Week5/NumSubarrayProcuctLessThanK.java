@@ -11,6 +11,7 @@ public class NumSubarrayProcuctLessThanK {
         double[] prefix = new double[nums.length + 1];
         for(int i = 0; i < nums.length; i++){
             prefix[i+1] = prefix[i] + Math.log(nums[i]);
+
         }
         int ans = 0;
         for(int i = 0; i < prefix.length ; i++){
